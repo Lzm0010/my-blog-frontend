@@ -1,12 +1,14 @@
 import React, {Fragment} from 'react';
 import Nav from '../components/nav/Nav';
-import Editor from '../components/editor/Editor';
+import PostForm from '../components/form/PostForm';
 
 function AddPost () {
+
+
     return(
         <Fragment>
             <Nav />
-            <Editor />
+            <PostForm />
         </Fragment>
     )
 }
