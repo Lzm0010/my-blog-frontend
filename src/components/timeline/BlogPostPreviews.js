@@ -1,30 +1,14 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {Fragment} from 'react';
+import useFetch from '../../hooks/useFetch';
 
 function BlogPostPreviews () {
-    const [posts, setPosts] = useState([]);
-    const [hasError, setHasError] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const baseUrl = `http://localhost:3000`;
+    const postsUrl = `${baseUrl}/posts`;
 
-    useEffect(() => {
-        setLoading(true)
-        const baseUrl = `http://localhost:3000`;
-
-        //get posts
-        const postsUrl = `${baseUrl}/posts`
-        fetch(postsUrl)
-            .then(res => res.json())
-            .then(posts => {
-                setPosts(posts)
-                setLoading(false)
-            })
-            .catch(err => {
-                setHasError(true)
-                setLoading(false)
-            })
-    }, [])
+    const [response, loading, hasError] = useFetch(postsUrl);
 
     const displayPosts = () => {
-       return posts.map(post => <div>{post.title}</div>)
+       return response.map(post => <div>{post.title}</div>)
     }
 
     return(
