@@ -1,9 +1,13 @@
 import React from 'react';
-import TimeItemContainer from './TimeItemContainer';
+import TimeItem from './TimeItem';
 
-function Timeline () {
+function Timeline (props) {
+    console.log(props)
+
     return(
-        <TimeItemContainer />
+        <div>
+            {props.children}
+        </div>
     )
 }
 

@@ -1,16 +1,12 @@
 import React, {Fragment} from 'react';
 import Date from './Date';
-import BlogPostPreview from './BlogPostPreview';
-import ResumeFact from './ResumeFact';
-import Project from './Project';
 
-function TimeItem () {
+
+function TimeItem (props) {
     return(
         <Fragment>
             <Date />
-            <BlogPostPreview />
-            <ResumeFact />
-            <Project />
+            {props.children}
         </Fragment>
     )
 }
