@@ -1,13 +1,13 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Date from './Date';
 
-
 function TimeItem (props) {
+
     return(
-        <Fragment>
-            <Date />
+        <div>
+            <Date date={props.date}/>
             {props.children}
-        </Fragment>
+        </div>
     )
 }
 

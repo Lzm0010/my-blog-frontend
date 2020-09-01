@@ -1,4 +1,6 @@
 import React, {Fragment} from 'react';
+import TimeItem from './TimeItem';
+import BlogPostPreview from './BlogPostPreview';
 import useFetch from '../../hooks/useFetch';
 
 function BlogPostPreviews () {
@@ -8,7 +10,7 @@ function BlogPostPreviews () {
     const [response, loading, hasError] = useFetch(postsUrl);
 
     const displayPosts = () => {
-       return response.map(post => <div>{post.title}</div>)
+    return response.map(post => <TimeItem key={post.id} date={post.created_at}><BlogPostPreview post={post} /></TimeItem>)
     }
 
     return(

@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Date () {
+function Date ({date}) {
     return(
-        <div>Date</div>
+        <div>{date}</div>
     )
 }
 
