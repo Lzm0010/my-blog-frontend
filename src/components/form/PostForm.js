@@ -35,6 +35,7 @@ function PostForm () {
     const handleSubmit = (e) => {
         e.preventDefault();
         addPost();
+        //add navigate after form submits
     }
 
     return (

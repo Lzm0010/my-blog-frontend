@@ -3,11 +3,20 @@ import Nav from '../components/nav/Nav';
 import BlogPostOptions from '../components/blogPost/BlogPostOptions';
 import CommentsContainer from '../components/comment/CommentsContainer';
 
-function BlogPost () {
+function BlogPost (props) {
+    const post = props.location.state;
+    console.log(post)
+
     return(
         <Fragment>
             <Nav />
-            <p>A Blog Post</p>
+            <h1>{post.title}</h1>
+            <div>{post.cover_photo_url}</div>
+            <div>{post.views}</div>
+            <div>{post.likes}</div>
+            <p>{post.content}</p>
+
+
             <BlogPostOptions />
             <CommentsContainer />
         </Fragment>

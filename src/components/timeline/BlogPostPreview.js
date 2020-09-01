@@ -1,13 +1,16 @@
 import React from 'react';
+import {Link} from '@reach/router';
 
 function BlogPostPreview ({post}) {
     return(
-        <div>
-            <div>{post.cover_photo_url}</div>
-            <div>{post.title}</div>
-            <div>{post.likes}</div>
-            <div>{post.content}</div>
-        </div>
+        <Link to={`post/${post.id}`} state={post}>
+            <div>
+                <div>{post.cover_photo_url}</div>
+                <div>{post.title}</div>
+                <div>{post.likes}</div>
+                <div>{post.content}</div>
+            </div>
+        </Link>
     )
 }
 
