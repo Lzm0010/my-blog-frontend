@@ -20,6 +20,7 @@ a:hover {
     height: 0px;
     width: 0px;
     position: absolute;
+    z-index: 1;
 }
 
 .toprightcorner {
@@ -30,6 +31,7 @@ a:hover {
     width: 0px;
     position: absolute;
     right:0;
+    z-index: 1;
 }
 
 .bottomleftcorner {
@@ -41,6 +43,7 @@ a:hover {
     position: absolute;
     bottom:0;
     left:0;
+    z-index: 1;
 }
 
 .bottomrightcorner {
@@ -52,6 +55,7 @@ a:hover {
     position: absolute;
     bottom:0;
     right: 0;
+    z-index: 1;
 }
 
 .home {
@@ -59,6 +63,7 @@ a:hover {
     top: 50px;
     left: 50px;
     transform: rotate(-45deg);
+    z-index: 1;
 }
 
 .about {
@@ -66,6 +71,7 @@ a:hover {
     top: 50px;
     right: 50px;
     transform: rotate(45deg);
+    z-index: 1;
 }
 
 .contact {
@@ -73,6 +79,7 @@ a:hover {
     bottom: 50px;
     right: 50px;
     transform: rotate(-45deg);
+    z-index: 1;
 }
 
 .projects {
@@ -80,4 +87,5 @@ a:hover {
     bottom: 50px;
     left: 50px;
     transform: rotate(45deg);
+    z-index: 1;
 }

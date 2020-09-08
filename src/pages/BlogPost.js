@@ -1,8 +1,10 @@
 import React, {Fragment} from 'react';
+import ReactMarkdown from 'react-markdown';
 import Nav from '../components/nav/Nav';
 import Container from '../components/basic/Container';
 import BlogPostOptions from '../components/blogPost/BlogPostOptions';
 import CommentsContainer from '../components/comment/CommentsContainer';
+import CodeBlock from '../components/blogPost/CodeBlock';
 
 function BlogPost (props) {
     const post = props.location.state;
@@ -16,8 +18,7 @@ function BlogPost (props) {
                 <div>{post.cover_photo_url}</div>
                 <div>{post.views}</div>
                 <div>{post.likes}</div>
-                <p>{post.content}</p>
-
+                <ReactMarkdown source={post.content} renderers={{code: CodeBlock}}/>
                 <BlogPostOptions />
                 <CommentsContainer />
             </Container>
