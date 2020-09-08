@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
+import {useNavigate} from '@reach/router';
 import Editor from '../editor/Editor';
 
 function PostForm () {
+    const navigate = useNavigate();
     const [title, setTitle] = useState("");
     const [coverPhotoUrl, setCoverPhotoUrl] = useState("");
     const [content, setContent] = useState("");
     const baseUrl = `http://localhost:3000`;
 
-    const addPost = () => {
+    const addPost = async () => {
         const addPostUrl = `${baseUrl}/posts`
         const postObj = {
             "method": "POST",
@@ -17,25 +19,26 @@ function PostForm () {
             },
             "body": JSON.stringify({title, cover_photo_url:coverPhotoUrl, content, user_id: 1})
         }
-        fetch(addPostUrl, postObj)
-            .then(res => res.json())
-            .then(post => console.log(post))
+        const postData = await fetch(addPostUrl, postObj);
+        const post = await postData.json();
+
+        return post;
     }
 
-    const handleTitle = (e) => {
+    const handleTitle = e => {
         const newTitle = e.target.value;
         setTitle(newTitle)
     }
 
-    const handleCoverPhoto = (e) => {
+    const handleCoverPhoto = e => {
         const newCoverPhoto = e.target.value;
         setCoverPhotoUrl(newCoverPhoto);
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async e => {
         e.preventDefault();
-        addPost();
-        //add navigate after form submits
+        const newPost = await addPost();
+        navigate(`/post/${newPost.id}`, {state:newPost})
     }
 
     return (
