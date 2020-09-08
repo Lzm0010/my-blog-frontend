@@ -4,6 +4,7 @@ import Container from '../components/basic/Container';
 import Header from '../components/basic/Header';
 import Timeline from '../components/timeline/Timeline';
 import Footer from '../components/basic/Footer';
+import lab from '../images/lab.svg';
 
 
 function Projects () {
@@ -11,7 +12,7 @@ function Projects () {
         <Fragment>
             <Nav/>
             <Container>
-                <Header />
+                <Header title="Projects" img={lab}/>
                 <Timeline />
                 <Footer />
             </Container>

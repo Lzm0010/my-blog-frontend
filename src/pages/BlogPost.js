@@ -5,6 +5,7 @@ import Container from '../components/basic/Container';
 import BlogPostOptions from '../components/blogPost/BlogPostOptions';
 import CommentsContainer from '../components/comment/CommentsContainer';
 import CodeBlock from '../components/blogPost/CodeBlock';
+import styles from './BlogPost.module.css';
 
 function BlogPost (props) {
     const post = props.location.state;
@@ -18,7 +19,7 @@ function BlogPost (props) {
                 <div>{post.cover_photo_url}</div>
                 <div>{post.views}</div>
                 <div>{post.likes}</div>
-                <ReactMarkdown source={post.content} renderers={{code: CodeBlock}}/>
+                <ReactMarkdown className={styles.content} source={post.content} renderers={{code: CodeBlock}}/>
                 <BlogPostOptions />
                 <CommentsContainer />
             </Container>

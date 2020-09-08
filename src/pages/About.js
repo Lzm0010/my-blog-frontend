@@ -6,12 +6,13 @@ import Timeline from '../components/timeline/Timeline';
 import Footer from '../components/basic/Footer';
 
 
+
 function About () {
     return(
         <Fragment>
             <Nav/>
             <Container>
-                <Header />
+                <Header title="About Me" />
                 <Timeline />
                 <Footer />
             </Container>
