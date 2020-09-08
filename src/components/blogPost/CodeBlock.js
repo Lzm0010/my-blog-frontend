@@ -10,7 +10,7 @@ class CodeBlock extends PureComponent {
   };
 
   static defaultProps = {
-    language: null
+    language: "javascript"
   };
 
   render() {
