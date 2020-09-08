@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import Nav from '../components/nav/Nav';
+import Container from '../components/basic/Container';
 import BlogPostOptions from '../components/blogPost/BlogPostOptions';
 import CommentsContainer from '../components/comment/CommentsContainer';
 
@@ -10,15 +11,16 @@ function BlogPost (props) {
     return(
         <Fragment>
             <Nav />
-            <h1>{post.title}</h1>
-            <div>{post.cover_photo_url}</div>
-            <div>{post.views}</div>
-            <div>{post.likes}</div>
-            <p>{post.content}</p>
+            <Container>
+                <h1>{post.title}</h1>
+                <div>{post.cover_photo_url}</div>
+                <div>{post.views}</div>
+                <div>{post.likes}</div>
+                <p>{post.content}</p>
 
-
-            <BlogPostOptions />
-            <CommentsContainer />
+                <BlogPostOptions />
+                <CommentsContainer />
+            </Container>
         </Fragment>
     )
 }

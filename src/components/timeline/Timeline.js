@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 function Timeline (props) {
 
     return(
-        <div>
+        <Fragment>
             {props.children}
-        </div>
+        </Fragment>
     )
 }
 
