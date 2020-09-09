@@ -27,10 +27,10 @@ function ContactForm () {
     return(
         <div className={styles.container}>
             <form onSubmit={handleSubmit}>
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" name="email" value={email} onChange={handleEmail} placeholder="Enter your Email here"/>
 
-                <label for="content">Message</label>
+                <label htmlFor="content">Message</label>
                 <textarea name="content" rows="9" cols="60" value={content} onChange={handleContent} placeholder="Tell me what's up!"/>
                 <button className={styles.btn} type="submit" value="submit">Send!</button>
             </form>

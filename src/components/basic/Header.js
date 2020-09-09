@@ -6,7 +6,7 @@ function Header (props) {
     return(
         <div className={styles.header}>
             <h1 className={styles.title}>{props.title}</h1>
-            <img src={props.img} className={styles.headerImg}/>
+            <img src={props.img} className={styles.headerImg} alt="Banner" />
         </div>
     )
 }
