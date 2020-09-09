@@ -1,6 +1,7 @@
 .container {
     margin: 0 auto;
     width: 65%;
+    text-align: left;
 }
 
 input, textarea {
@@ -13,6 +14,15 @@ input, textarea {
     resize: vertical;
     font-family: 'Gingham';
     font-size: 13px;
+}
+
+label {
+    font-family: 'Gingham';
+    color: #433E0E;
+    margin-bottom: -11px;
+    padding: 12px 12px 12px 10px;
+    display: inline-block;
+    width: 100px;
 }
 
 .btn {

@@ -1,0 +1,15 @@
+.footerLinks {
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.faIcon {
+    color: #433E0E;
+    margin-top: 14px;
+}
+
+.faIcon:hover {
+    color: #EDEEC0;
+}

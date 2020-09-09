@@ -27,9 +27,11 @@ function ContactForm () {
     return(
         <div className={styles.container}>
             <form onSubmit={handleSubmit}>
-                <label>Email:</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" value={email} onChange={handleEmail} placeholder="Enter your Email here"/>
-                <textarea name="content" rows="12" cols="60" value={content} onChange={handleContent} placeholder="Tell me what's up!"/>
+
+                <label for="content">Message</label>
+                <textarea name="content" rows="9" cols="60" value={content} onChange={handleContent} placeholder="Tell me what's up!"/>
                 <button className={styles.btn} type="submit" value="submit">Send!</button>
             </form>
         </div>
