@@ -1,18 +1,63 @@
+.header {
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .title {
     font-family: 'Gingham';
     font-size: 110px;
     color: #433E0E;
     text-align: center;
+    display: inline-block;
     width: 40%;
-    position: absolute;
-    top: 15px;
-    left: 100px;
 }
 
 .headerImg {
-    position: absolute;
-    top: 15px;
-    right: 100px;
-    height: 40%;
-    width: 50%;
+    height: 264px;
+    width: 40%;
+}
+
+@media screen and (max-width: 1320px) {
+    .title {
+        font-size: 90px;
+    }
+    .headerImg {
+        height: 216px;
+    }
+}
+
+@media screen and (max-width: 1086px) {
+    .title {
+        font-size: 70px;
+    }
+    .headerImg {
+        height: 168px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .title {
+        font-size: 50px;
+    }
+    .headerImg {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header {
+        width: 170px;
+        height: 150px;
+        flex-flow: row wrap;
+    }
+    .headerImg{
+        width: 100px; 
+    }
+    .title {
+        width: 100px;
+        font-size: 22px;
+    }
 }

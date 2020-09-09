@@ -94,3 +94,9 @@ a:hover {
     z-index: 1;
     font-size: 1.3em;
 }
+
+@media screen and (max-width: 580px){
+    .nav {
+        display: none;
+    }
+}
