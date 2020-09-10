@@ -3,14 +3,30 @@ import InstaPhoto from './InstaPhoto';
 import styles from './InstaContainer.module.css';
 
 function InstaContainer () {
-    const [photos, setPhotos] = useState([
+    const [photos] = useState([
         {
             id: 'p1',
             url: "https://www.instagram.com/p/B_YuTqaltct/"
         },
         {
             id: 'p2',
-            url: "https://www.instagram.com/p/B5l6jXahAJi/"
+            url: 'https://www.instagram.com/p/B1mR4XvhucD/'
+        },
+        {
+            id: 'p3',
+            url: 'https://www.instagram.com/p/BzwF22_BCVm/'
+        },
+        {
+            id: 'p4',
+            url: 'https://www.instagram.com/p/Bj7n7amn2gm/'
+        },
+        {
+            id: 'p5',
+            url: "https://www.instagram.com/p/BjSf_eanm5j/"
+        },
+        {
+            id: 'p6',
+            url: 'https://www.instagram.com/p/BasVA1LgGQ2/'
         }
     ]);
 

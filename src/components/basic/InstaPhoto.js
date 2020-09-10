@@ -1,15 +1,15 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import InstagramEmbed from 'react-instagram-embed';
+import styles from './InstaPhoto.module.css';
 
 function InstaPhoto (props) {
     
     return(
-        <Fragment>
-            {console.log(props)}
+        <div className={styles.photo}>
             <InstagramEmbed
                 url={props.url}
                 maxWidth={320}
-                hideCaption={false}
+                hideCaption={true}
                 containerTagName='div'
                 protocol=''
                 injectScript
@@ -18,7 +18,7 @@ function InstaPhoto (props) {
                 onAfterRender={() => {}}
                 onFailure={() => {}}
                 />
-                </Fragment>
+        </div>
     )
 }
 

@@ -1,7 +1,7 @@
 .header {
     margin: 0 auto;
     width: 65%;
-    height:270px;
+    height:267px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .headerImg {
-    height: 264px;
+    height: 250px;
     width: 40%;
 }
 

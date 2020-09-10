@@ -31,7 +31,7 @@ function ContactForm () {
                 <input type="email" name="email" value={email} onChange={handleEmail} placeholder="Enter your Email here"/>
 
                 <label htmlFor="content">Message</label>
-                <textarea name="content" rows="9" cols="60" value={content} onChange={handleContent} placeholder="Tell me what's up!"/>
+                <textarea name="content" rows="7" cols="60" value={content} onChange={handleContent} placeholder="Tell me what's up!"/>
                 <button className={styles.btn} type="submit" value="submit">Send!</button>
             </form>
         </div>
