@@ -1,9 +1,13 @@
+import robet from '../images/robet.png';
+import ontask from '../images/ontask.png';
+
 const projects = [
     {
+        id: 'proj1',
         title: "RoBet",
-        img: "",
+        img: robet,
         sourceCode: "https://github.com/users/Lzm0010/projects/1",
-        demo: "robet.netlify.app",
+        demo: "https://robet.netlify.app",
         summary: "A machine learning bot that predicts sports scores based on regression algorithms, app able to track bets and compare performance vs machine",
         info: [
             "Utilized JSON Web Tokens and localStorage to store encrypted user information client-side",
@@ -15,10 +19,11 @@ const projects = [
         date: "05/2020"
     },
     {
+        id: 'proj2',
         title: "On Task",
-        img: "",
+        img: ontask,
         sourceCode: "https://github.com/users/Lzm0010/projects/2",
-        demo: "beontask.com",
+        demo: "https://www.beontask.com",
         summary: "A planner app for mapping out and measuring goals and projects on a calendar",
         info: [
             "Implemented user interface employing React with Semantic UI for styling",
