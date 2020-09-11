@@ -11,11 +11,17 @@
 .itemCard {
     border-radius: 10px;
     border-top: 8px solid #A7A;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
     background: #EDEEC0;
     width:45%;
     height: 350px;
-    outline-offset: 
+    cursor: pointer;
+}
+
+.itemCard:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
 /* .timeItem:nth-child(odd){

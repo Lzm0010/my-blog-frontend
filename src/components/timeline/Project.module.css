@@ -1,6 +1,19 @@
 .projects {
     margin: 0 auto;
-    width: 65%;
+    width: 85%;
+    min-height: 350px;
+
+}
+
+.c {
+    min-height: 350px;
+    width: 80%;
+    will-change: transform, opacity;
+}
+
+.points {
+    position: absolute;
+    top: -350px;
 }
 
 .title {
@@ -20,6 +33,7 @@
 }
 
 .summary {
+    height: 67px;
     font-size: .89em;
     color: #433E0E;
 }
@@ -42,9 +56,5 @@
 
 .btn a:hover {
     color: #EDEEC0;
-}
-
-.points {
-    display: none;
 }
 
