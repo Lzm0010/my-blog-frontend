@@ -1,0 +1,52 @@
+.timeItem {
+    width: 100%;
+    font-family: 'Gingham';
+    height: 350px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.itemCard {
+    border-radius: 10px;
+    border-top: 8px solid #A7A;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #EDEEC0;
+    width:45%;
+    height: 350px;
+    outline-offset: 
+}
+
+/* .timeItem:nth-child(odd){
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+/* } */ 
+
+.timeItem:nth-child(odd) .itemCard{
+    border-top: 8px solid #2B4;
+    align-self: flex-end;
+}
+
+.timeItem:nth-child(odd) .date{
+    align-self: flex-start;
+}
+
+.lineShapes {
+    position: absolute;
+    align-self: center;
+}
+
+.ball {
+    background-color: #433E0E;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.line {
+    height: 332px;
+    border-left: 6px solid #433E0E;
+    margin-top: 1px;
+    margin-left: 38%;
+}

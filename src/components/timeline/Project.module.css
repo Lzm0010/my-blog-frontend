@@ -1,0 +1,50 @@
+.projects {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 800;
+    color: #433E0E;
+}
+
+.image {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image:hover {
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5), 0 18px 32px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.summary {
+    font-size: .89em;
+    color: #433E0E;
+}
+
+.btn {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #2B4162;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    background-color: #433E0E;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: #EDEEC0;
+}
+
+.points {
+    display: none;
+}
+

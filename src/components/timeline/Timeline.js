@@ -1,11 +1,12 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import styles from './Timeline.module.css';
 
 function Timeline (props) {
 
     return(
-        <Fragment>
+        <div className={styles.timeline}>
             {props.children}
-        </Fragment>
+        </div>
     )
 }
 

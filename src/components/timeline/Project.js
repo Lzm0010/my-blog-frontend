@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Project.module.css';
 
 function Project ({project}) {
     
@@ -7,17 +8,17 @@ function Project ({project}) {
     }
 
     return(
-        <div>
-            <h3>{project.title}</h3>
-            <img src={project.img} alt={project.id}/>
-            <p>{project.summary}</p>
-            <button>
+        <div className={styles.projects}>
+            <h3 className={styles.title}>{project.title}</h3>
+            <img className={styles.image} src={project.img} alt={project.id}/>
+            <p className={styles.summary}>{project.summary}</p>
+            <button className={styles.btn}>
                 <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">Source Code</a>
             </button>
-            <button>
+            <button className={styles.btn}>
                 <a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
             </button>
-            <ul>
+            <ul className={styles.points}>
                 {displayProjectPoints()}
             </ul>
         </div>

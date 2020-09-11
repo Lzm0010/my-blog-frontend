@@ -1,3 +1,6 @@
 .timeline {
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 65%;
+    margin: 0 auto;
 }
