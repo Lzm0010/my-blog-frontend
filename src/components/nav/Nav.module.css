@@ -17,7 +17,7 @@ a:hover {
 .topleftcorner {
     border-color: transparent transparent transparent #A7A284;
     border-style: solid;
-    border-width: 0px 200px 200px 200px;
+    border-width: 0px 0px 200px 200px;
     height: 0px;
     width: 0px;
     position: absolute;

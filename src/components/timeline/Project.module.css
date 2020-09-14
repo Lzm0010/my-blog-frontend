@@ -23,7 +23,8 @@
 }
 
 .image {
-    width: 100%;
+    width: 80%;
+    height: 175px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -33,7 +34,7 @@
 }
 
 .summary {
-    height: 67px;
+    height: 50px;
     font-size: .89em;
     color: #433E0E;
 }
@@ -56,5 +57,55 @@
 
 .btn a:hover {
     color: #EDEEC0;
+}
+
+@media screen and (max-width: 1086px) {
+    .title {
+        font-size: .91em;
+    }
+    .image {
+        height: 155px;
+    }
+    .summary {
+        font-size: .68em;
+        height: 40px;
+    }
+    .btn {
+        height: 23px;
+        font-size: .75em;
+        margin: 3px;
+        padding: 3px;
+    }
+    .points {
+        top: -296px;
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .title {
+        font-size: .82em;
+    }
+    .image {
+        height: 135px;
+    }
+    .summary {
+        font-size: .43em;
+        height: 34px;
+    }
+    .btn {
+        height: 20px;
+        font-size: .65em;
+        margin: 2px;
+        padding: 2px;
+    }
+    .points {
+        top: -249px;
+        font-size: .60em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
 }
 

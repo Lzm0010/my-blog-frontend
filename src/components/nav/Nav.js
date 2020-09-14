@@ -9,23 +9,23 @@ function Nav () {
                 currently includes full invisble square
             */}
 
-            <Link to="/">
                 <div className={styles.topleftcorner}></div>
+            <Link to="/">
                 <div className={styles.home} to="/">Home</div>
             </Link>
 
-            <Link to="/about">
                 <div className={styles.toprightcorner}></div>
+            <Link to="/about">
                 <div className={styles.about}>About</div>
             </Link>
 
-            <Link to="/projects">
                 <div className={styles.bottomleftcorner}></div>
+            <Link to="/projects">
                 <div className={styles.projects}>Projects</div>
             </Link>
 
-            <Link to="/contact">
                 <div className={styles.bottomrightcorner}></div>
+            <Link to="/contact">
                 <div className={styles.contact}>Contact</div>
             </Link>
 

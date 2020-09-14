@@ -17,17 +17,25 @@ function Project ({project}) {
     return(
         <div onClick={() => set(state => !state)} className={styles.projects}>
             <animated.div className="c" style={{ opacity: opacity.interpolate(o => 1 - o), transform } }>
-                <h3 className={styles.title}>{project.title}</h3>
+                <h3 className={styles.title}>
+                    {project.title}
+                </h3>
+
                 <img className={styles.image} src={project.img} alt={project.id}/>
-                <p className={styles.summary}>{project.summary}</p>
-                <button className={styles.btn}>
+
+                <p className={styles.summary}>
+                    {project.summary}
+                </p>
+
+                <button className={styles.btn} onClick={e => e.stopPropagation()}>
                     <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">Source Code</a>
                 </button>
-                <button className={styles.btn}>
+
+                <button className={styles.btn} onClick={e => e.stopPropagation()}>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
                 </button>
             </animated.div>
-            <animated.div class="c" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
+            <animated.div className="c" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
                 <ul className={styles.points}>
                     {displayProjectPoints()}
                 </ul>

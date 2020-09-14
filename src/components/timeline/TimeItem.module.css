@@ -14,7 +14,7 @@
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
     will-change: transform;
-    background: #EDEEC0;
+    background: #f5f5f5;
     width:45%;
     height: 350px;
     cursor: pointer;
@@ -34,9 +34,21 @@
     align-self: flex-end;
 }
 
+.date {
+    position: absolute;
+    margin-top: 70px;
+}
+
 .timeItem:nth-child(odd) .date{
     align-self: flex-start;
+    margin-left: 150px;
 }
+
+.timeItem:nth-child(even) .date{
+    align-self: flex-end;
+    margin-right: 150px;
+}
+
 
 .lineShapes {
     position: absolute;
@@ -55,4 +67,33 @@
     border-left: 6px solid #433E0E;
     margin-top: 1px;
     margin-left: 38%;
+}
+
+@media screen and (max-width: 1086px) {
+    .itemCard {
+        height: 308px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .itemCard {
+        height: 263px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .lineShapes {
+        margin-top: 90px;
+    }
+    .itemCard {
+        height: 320px;
+        align-self: center;
+        width: 90%;
+        margin-top: 120px;
+    }
+
+    .timeItem:nth-child(odd) .itemCard{
+        align-self: center;
+    }
+
 }
