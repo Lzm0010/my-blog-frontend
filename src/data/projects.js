@@ -16,7 +16,7 @@ const projects = [
             "Implemented user interface employing React and Hooks API with Material-React for styling", 
             "Created Illustrations with Adobe Illustrator using shape and pen tools" 
         ],
-        date: "05/2020"
+        date: "May 2020"
     },
     {
         id: 'proj2',
@@ -30,7 +30,7 @@ const projects = [
             "Developed a robust React front end, implemented a state management solution using Hooks API",
             "Built a Rails API backend with endpoints for tasks, goals, projects"
         ],
-        date: "06/2020"
+        date: "Jun 2020"
     }
 ];
 

@@ -13,6 +13,7 @@ function TimeItem (props) {
         <div className={styles.timeItem}>
             <div className={styles.date}>
                 <Date date={props.date}/>
+                <div className={styles.dateLine}></div>
             </div>
             <div className={styles.lineShapes}>
                 <div className={styles.ball}></div>

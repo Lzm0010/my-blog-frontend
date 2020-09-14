@@ -5,7 +5,6 @@
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-
 }
 
 .itemCard {
@@ -24,11 +23,6 @@
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
-/* .timeItem:nth-child(odd){
-    /* align-items: flex-end; */
-    /* justify-content: center; */
-/* } */ 
-
 .timeItem:nth-child(odd) .itemCard{
     border-top: 8px solid #2B4;
     align-self: flex-end;
@@ -36,19 +30,47 @@
 
 .date {
     position: absolute;
+    width: 102px;
     margin-top: 70px;
+    border: 4px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+    color: #433E0E;
+    background-color: #A7A284;
+    font-size: 25px;
+}
+
+.date:hover {
+    background-color: #EDEEC0;
+}
+
+.dateLine {
+    border: 2px solid #f5f5f5;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 3px;
+    
 }
 
 .timeItem:nth-child(odd) .date{
     align-self: flex-start;
-    margin-left: 150px;
+    margin-left: calc(33% - 360px);
 }
 
 .timeItem:nth-child(even) .date{
     align-self: flex-end;
-    margin-right: 150px;
+    margin-right: calc(33% - 360px);
 }
 
+.timeItem:nth-child(odd) .dateLine {
+    left: 122px;
+    width: 216px;
+}
+
+.timeItem:nth-child(even) .dateLine {
+    right: 122px;
+    width: 216px; 
+}
 
 .lineShapes {
     position: absolute;
@@ -69,15 +91,66 @@
     margin-left: 38%;
 }
 
+.timeItem:last-child .line{
+    height: 690px;
+
+}
+
 @media screen and (max-width: 1086px) {
     .itemCard {
         height: 308px;
     }
+    .date {
+        width: 75px;
+        font-size: 18px;
+    }
+    .timeItem:nth-child(odd) .date{
+        margin-left: calc(33% - 280px);
+    }
+    
+    .timeItem:nth-child(even) .date{
+        margin-right: calc(33% - 280px);
+    }
+
+    .timeItem:nth-child(odd) .dateLine {
+        left: 97px;
+        width: 164px;
+    }
+    .timeItem:nth-child(even) .dateLine {
+        right: 97px;
+        width: 164px; 
+    }
+    
 }
 
 @media screen and (max-width: 850px) {
     .itemCard {
         height: 263px;
+    }
+
+    .date {
+        width: 60px;
+        font-size: 14px;
+    }
+    .dateLine{
+        bottom: 15px;
+    }
+
+    .timeItem:nth-child(odd) .date{
+        margin-left: calc(33% - 200px);
+    }
+    
+    .timeItem:nth-child(even) .date{
+        margin-right: calc(33% - 200px);
+    }
+
+    .timeItem:nth-child(odd) .dateLine {
+        left: 80px;
+        width: 102px;
+    }
+    .timeItem:nth-child(even) .dateLine {
+        right: 80px;
+        width: 102px; 
     }
 }
 
@@ -89,11 +162,45 @@
         height: 320px;
         align-self: center;
         width: 90%;
-        margin-top: 120px;
+        margin-top: 160px;
+        z-index:4;
     }
 
     .timeItem:nth-child(odd) .itemCard{
         align-self: center;
+    }
+
+    .timeItem:nth-child(even) .itemCard{
+        align-self: center;
+        margin-top: 200px;
+    }
+
+    .date {
+        width: 80px;
+        font-size: 14px;
+        z-index: 4;
+    }
+    .dateLine{
+        bottom: 15px;
+    }
+
+    .timeItem:nth-child(odd) .date{
+        margin-left: 0;
+        align-self: center;
+        margin: 40px;
+    }
+    
+    .timeItem:nth-child(even) .date{
+        margin-right: 0;
+        align-self: center;
+        margin: 150px;
+    }
+
+    .timeItem:nth-child(odd) .dateLine {
+        display: none;
+    }
+    .timeItem:nth-child(even) .dateLine {
+        display: none;
     }
 
 }

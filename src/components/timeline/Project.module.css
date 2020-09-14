@@ -106,6 +106,25 @@
 }
 
 @media screen and (max-width: 580px) {
-    
+    .title {
+        font-size: .91em;
+    }
+    .image {
+        height: 165px;
+    }
+    .summary {
+        height: 50px;
+        font-size: .60em;
+    }
+    .btn {
+        height: 25px;
+        font-size: .80em;
+        padding: 3px;
+        margin: 3px;
+    }
+    .points {
+        font-size: .75em;
+        top: -313px;
+    }
 }
 
