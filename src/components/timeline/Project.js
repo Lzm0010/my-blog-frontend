@@ -11,11 +11,12 @@ function Project ({project}) {
     })
 
     const displayProjectPoints = () => {
-        return project.info.map((point, i) => <li key={i}>{point}</li>)
+        return project.info.map((point, i) => <li key={i} className={styles.factLi}>{point}</li>)
     }
 
     return(
         <div onClick={() => set(state => !state)} className={styles.projects}>
+
             <animated.div className="c" style={{ opacity: opacity.interpolate(o => 1 - o), transform } }>
                 <h3 className={styles.title}>
                     {project.title}
@@ -35,11 +36,13 @@ function Project ({project}) {
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
                 </button>
             </animated.div>
+
             <animated.div className="c" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
-                <ul className={styles.points}>
+                <ul className={styles.factList}>
                     {displayProjectPoints()}
                 </ul>
             </animated.div>
+            
         </div>
     )
 }

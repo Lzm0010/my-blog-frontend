@@ -11,11 +11,6 @@
     will-change: transform, opacity;
 }
 
-.points {
-    position: absolute;
-    top: -350px;
-}
-
 .title {
     font-size: 1em;
     font-weight: 800;
@@ -30,7 +25,6 @@
 
 .image:hover {
     box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5), 0 18px 32px 0 rgba(0, 0, 0, 0.19);
-    
 }
 
 .summary {
@@ -58,6 +52,29 @@
 .btn a:hover {
     color: #EDEEC0;
 }
+
+.factList {
+    position: absolute;
+    top: -350px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.factLi {
+    font: 200 12px/1.5 'Gingham', Helvetica, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+
+.factLi:last-child {
+    border: none;
+}
+
+.factLi:hover {
+    font-size: 20px;
+    background: #EDEEc0;
+}
+
 
 @media screen and (max-width: 1086px) {
     .title {

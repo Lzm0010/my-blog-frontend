@@ -3,7 +3,10 @@ import Nav from '../components/nav/Nav';
 import Container from '../components/basic/Container';
 import Header from '../components/basic/Header';
 import Timeline from '../components/timeline/Timeline';
-import Footer from '../components/basic/Footer';
+import ResumeContainer from '../components/timeline/ResumeContainer';
+import FooterLinks from '../components/basic/FooterLinks';
+import lee from '../images/lee.svg';
+import SkillsContainer from '../components/skills/SkillsContainer';
 
 
 
@@ -12,9 +15,12 @@ function About () {
         <Fragment>
             <Nav/>
             <Container>
-                <Header title="About Me" />
-                <Timeline />
-                <Footer />
+                <Header title="About Me" img={lee}/>
+                <Timeline>
+                    <ResumeContainer />
+                </Timeline>
+                <SkillsContainer />
+                <FooterLinks />
             </Container>
         </Fragment>
     )
