@@ -92,7 +92,7 @@
 }
 
 .timeItem:last-child .line{
-    height: 690px;
+    height: 380px;
 
 }
 
@@ -158,12 +158,18 @@
     .lineShapes {
         margin-top: 90px;
     }
+    
+    .timeItem {
+        min-height: 380px;
+    }
+
     .itemCard {
         height: 320px;
         align-self: center;
         width: 90%;
-        margin-top: 160px;
         z-index:4;
+        display: block;
+        margin-top: 150px;
     }
 
     .timeItem:nth-child(odd) .itemCard{
@@ -172,28 +178,31 @@
 
     .timeItem:nth-child(even) .itemCard{
         align-self: center;
-        margin-top: 200px;
     }
 
     .date {
         width: 80px;
-        font-size: 14px;
+        font-size: 9px;
         z-index: 4;
     }
     .dateLine{
         bottom: 15px;
     }
 
+    
     .timeItem:nth-child(odd) .date{
         margin-left: 0;
         align-self: center;
-        margin: 40px;
+        margin: 110px;
     }
     
+    .timeItem:first-child .date {
+        margin: 50px;
+    }
     .timeItem:nth-child(even) .date{
         margin-right: 0;
         align-self: center;
-        margin: 150px;
+        margin: 100px;
     }
 
     .timeItem:nth-child(odd) .dateLine {

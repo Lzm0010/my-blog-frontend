@@ -1,3 +1,8 @@
+import js from '../images/js.png';
+import rails from '../images/rails.png';
+import ai from '../images/ai.png';
+import psql from '../images/psql.png';
+
 const skills = [
     {
         title: "FrontEnd",
@@ -7,6 +12,7 @@ const skills = [
             "Vue.js",
             "Redux"
         ],
+        image: js
     },
     {
         title: "BackEnd",
@@ -19,6 +25,7 @@ const skills = [
                 "Python",
                 "Flask"
             ],
+        image: rails
     },
     {
         title:"Database",
@@ -27,7 +34,7 @@ const skills = [
             "PostgreSQL",
             "MongoDB"
         ], 
-
+        image: psql
     },
     {
         title:"Other", 
@@ -35,7 +42,8 @@ const skills = [
             "Git",
             "Linux",
             "Adobe Illustrator"
-        ]
+        ],
+        image: ai
     }
 ]
 

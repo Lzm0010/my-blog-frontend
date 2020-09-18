@@ -38,15 +38,11 @@
 }
 
 .position{
-    background-color: #A7A;
+    background-color: #bbb;
     border-radius: 12px;
     width:40%;
     padding: 4px;
     display: inline-block;
-}
-
-.fact:nth-child(odd) .position{
-    background-color: #2B4;
 }
 
 .image {
@@ -85,4 +81,125 @@
 .resumeLi:hover {
     font-size: 20px;
     background: #EDEEc0;
+}
+
+@media screen and (max-width: 1086px) {
+    .facts {
+        min-height: 308px;
+    }
+
+    .c {
+        height: 308px;
+    }
+
+    .title {
+        font-size: .91em;
+    }
+
+    .image {
+        height: 155px;
+    }
+
+    .row {
+        padding: 4px;
+        height: 35px;
+    }
+    
+    .location{
+        padding: 3px;
+        font-size: .78em;
+    }
+    
+    .position{
+        padding: 3px;
+        font-size: .78em;
+    }
+
+    .resumeList {
+        top: -270px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .facts {
+        min-height: 263px;
+    }
+
+    .c {
+        height: 263px;
+    }
+
+    .title {
+        font-size: .82em;
+    }
+
+    .image {
+        height: 135px;
+    }
+
+    .row {
+        padding: 3px;
+        height: 30px;
+    }
+    
+    .location{
+        padding: 3px;
+        font-size: .65em;
+    }
+    
+    .position{
+        padding: 3px;
+        font-size: .65em;
+    }
+
+    .resumeList {
+        top: -236px;
+    }
+
+    .resumeLi {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .facts {
+        min-height: 320px;
+    }
+
+    .c {
+        height: 320px;
+    }
+
+    .title {
+        font-size: .91em;
+    }
+
+    .image {
+        height: 165px;
+    }
+
+    .row {
+        padding: 4px;
+        height: 40px;
+    }
+    
+    .location{
+        padding: 4px;
+        font-size: .78em;
+    }
+    
+    .position{
+        padding: 4px;
+        font-size: .78em;
+    }
+
+    .resumeList {
+        top: -280px;
+    }
+
+    .resumeLi {
+        font-size: .7em;
+    }
+
 }

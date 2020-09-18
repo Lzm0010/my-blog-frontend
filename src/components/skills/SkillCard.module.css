@@ -1,4 +1,112 @@
 .skillCard {
     height: 400px;
-    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillCard:first-child{
+    background-color: #735A9B;
+}
+
+.skillCard:nth-child(2){
+    background-color: #E2EB98;
+}
+
+.skillCard:nth-child(3){
+    background-color: #A93F55;
+}
+
+.skillCard:last-child{
+    background-color: #89D3FF;
+}
+
+.header{
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px;
+}
+
+.skillCard:first-child .header{
+    background-color: #856AAA;
+}
+
+.skillCard:nth-child(2) .header{
+    background-color: #CFDD81
+}
+
+.skillCard:nth-child(3) .header{
+    background-color: #B44066;
+}
+
+.skillCard:last-child .header{
+    background-color: #74C3FD;
+}
+
+
+
+.skillTitle {
+    font-family: 'Gingham';
+    font-size: 30px;
+    color: #fff;
+}
+
+.image {
+    border-radius: 6px;
+    height: 80px;
+    margin: 20px 0px;
+}
+
+.skillList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.skillLi {
+    font: 200 20px/1.5 'Gingham', Helvetica, sans-serif;
+    border-bottom: 1px solid #ccc;
+    padding: 0 4px;
+}
+
+.skillLi {
+    border:none;
+}
+
+.skillLi:hover {
+    font-size: 30px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 850px) {
+    .skillTitle {
+        font-size: 18px;
+    }
+
+    .skillLi{
+        font-size: 15px;
+    }
+
+    .skillLi:hover{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .skillCard{
+        width: 100%;
+        margin-top: 10px;
+    }
 }

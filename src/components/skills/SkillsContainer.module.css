@@ -1,3 +1,16 @@
 .skillContainer {
-    
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.skillheader {
+    margin-top: 150px;
+    font-family: "Gingham";
+    font-weight: 800;
+    font-size: 60px;
+    color: #433E0E;
 }
