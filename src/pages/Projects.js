@@ -4,7 +4,9 @@ import Container from '../components/basic/Container';
 import Header from '../components/basic/Header';
 import Timeline from '../components/timeline/Timeline';
 import ProjectsContainer from '../components/timeline/ProjectsContainer';
+import FooterLinks from '../components/basic/FooterLinks';
 import lab from '../images/lab.svg';
+import styles from './Projects.module.css';
 
 
 function Projects () {
@@ -16,6 +18,8 @@ function Projects () {
                 <Timeline>
                     <ProjectsContainer />
                 </Timeline>
+                <div className={styles.space}></div>
+                <FooterLinks />
             </Container>
         </Fragment>
     )

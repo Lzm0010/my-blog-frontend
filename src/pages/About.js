@@ -8,8 +8,6 @@ import FooterLinks from '../components/basic/FooterLinks';
 import lee from '../images/lee.svg';
 import SkillsContainer from '../components/skills/SkillsContainer';
 
-
-
 function About () {
     return(
         <Fragment>
