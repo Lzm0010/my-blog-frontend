@@ -3,11 +3,11 @@ import {useNavigate} from '@reach/router';
 import Editor from '../editor/Editor';
 import styles from './PostForm.module.css';
 
-function PostForm () {
+function PostForm ({post}) {
     const navigate = useNavigate();
-    const [title, setTitle] = useState("");
-    const [coverPhotoUrl, setCoverPhotoUrl] = useState("");
-    const [content, setContent] = useState("");
+    const [title, setTitle] = useState(post ? post.title : "");
+    const [coverPhotoUrl, setCoverPhotoUrl] = useState(post ? post.coverPhotoUrl : "");
+    const [content, setContent] = useState(post ? post.content : "");
     const baseUrl = `http://localhost:3000`;
 
     const addPost = async () => {

@@ -9,7 +9,6 @@ import styles from './BlogPost.module.css';
 
 function BlogPost (props) {
     const post = props.location.state;
-    console.log(post)
 
     return(
         <Fragment>
@@ -20,7 +19,7 @@ function BlogPost (props) {
                 <div>{post.views}</div>
                 <div>{post.likes}</div>
                 <ReactMarkdown className={styles.content} source={post.content} renderers={{code: CodeBlock}}/>
-                <BlogPostOptions />
+                <BlogPostOptions post={post}/>
                 <CommentsContainer />
             </Container>
         </Fragment>
