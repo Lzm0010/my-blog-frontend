@@ -8,3 +8,9 @@
     background-color: #7C9082;
     overflow: auto;
 }
+
+@media screen and (max-width: 580px){
+    .container{
+        top: 9.9%;
+    }
+}

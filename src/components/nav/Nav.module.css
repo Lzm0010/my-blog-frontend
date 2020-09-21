@@ -4,6 +4,10 @@
     width: 100vw;
 }
 
+.mobileNav{
+    display: none;
+}
+
 a:link, a:visited {
     text-transform: uppercase;
     font-family: "Gingham";
@@ -96,7 +100,69 @@ a:hover {
 }
 
 @media screen and (max-width: 580px){
-    .nav {
+    .mainNav {
         display: none;
     }
+
+    .mobileNav{
+        position: fixed;
+        display: block;
+        width: 100vw;
+        height: 10%;
+        background-color: #A7A284;
+        z-index: 5;
+    }
+    
+    .menu{
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 60px;
+        color: #EDEEC0;
+    }
+    
+    .closed {
+        height:0px;
+        -webkit-transition:height, 0.5s linear;
+        -moz-transition: height, 0.5s linear;
+        -ms-transition: height, 0.5s linear;
+        -o-transition: height, 0.5s linear;
+        transition: height, 0.5s linear;
+    }
+    
+    .open {
+        display: block;
+        position: relative;
+        margin-top: -1px;
+        width: 100vw;
+        height: 165px;
+        background-color: #433E0E;
+        -webkit-transition:height, 0.5s linear;
+        -moz-transition: height, 0.5s linear;
+        -ms-transition: height, 0.5s linear;
+        -o-transition: height, 0.5s linear;
+        transition: height, 0.5s linear;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    }
+
+    .mobileLink {
+        display:block;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .closed .mobileLink {
+        display: none;
+    }
+      
 }
