@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    width: 65%;
+    text-align: left;
+    color: #2B4162;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #2B4162;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Gingham';
+    font-size: 13px;
+}
+
+label {
+    font-family: 'Gingham';
+    color: #433E0E;
+    margin-bottom: -11px;
+    padding: 12px 12px 12px 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #2B4162;
+    color: #EDEEC0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Gingham';
+    font-weight: 600;
+    font-size: 15px;
+}

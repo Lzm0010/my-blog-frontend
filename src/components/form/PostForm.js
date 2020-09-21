@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {useNavigate} from '@reach/router';
 import Editor from '../editor/Editor';
+import styles from './PostForm.module.css';
 
 function PostForm () {
     const navigate = useNavigate();
@@ -31,8 +32,21 @@ function PostForm () {
     }
 
     const handleCoverPhoto = e => {
-        const newCoverPhoto = e.target.value;
-        setCoverPhotoUrl(newCoverPhoto);
+        e.preventDefault();
+        const { files } = document.querySelector('input[type="file"]')
+        const formData = new FormData();
+        formData.append('file', files[0]);
+        formData.append('upload_preset', 'fcgusaea');
+        const options = {
+            method: 'POST',
+            body: formData,
+        };
+
+        // replace cloudname with your Cloudinary cloud_name
+        return fetch(`https://api.Cloudinary.com/v1_1/${process.env.REACT_APP_CLOUD_NAME}/image/upload`, options)
+            .then(res => res.json())
+            .then(res => setCoverPhotoUrl(res.secure_url))
+            .catch(err => console.log(err));
     }
 
     const handleSubmit = async e => {
@@ -42,14 +56,25 @@ function PostForm () {
     }
 
     return (
-        <form onSubmit={handleSubmit}> 
-            <input type="text" name="title" value={title} placeholder="Add Your Title" onChange={e => handleTitle(e)} />
-            <input type="text" name="coverPhoto" value={coverPhotoUrl} placeholder="Add Cover Photo Url" onChange={e => handleCoverPhoto(e)} />
-            <Editor content={content} setContent={setContent} />
-            <button type="submit">
-                Publish
-            </button>
-        </form>
+        <div className={styles.container}>
+            <form onSubmit={handleSubmit}> 
+                <label htmlFor="title">
+                    Title
+                </label>
+                <input type="text" name="title" value={title} placeholder="Add Your Title" onChange={e => handleTitle(e)} />
+
+                <label htmlFor="coverPhoto">
+                    Cover Photo
+                </label>
+                <input type="file" name="coverPhoto" />
+                <button onClick={handleCoverPhoto}>Upload</button>
+
+                <Editor content={content} setContent={setContent} />
+                <button className={styles.btn} type="submit">
+                    Publish
+                </button>
+            </form>
+        </div>
     )
 };
 

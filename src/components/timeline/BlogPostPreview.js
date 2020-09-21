@@ -6,7 +6,7 @@ function BlogPostPreview ({post}) {
     return(
         <Link to={`post/${post.id}`} state={post}>
             <div>
-                <div>{post.cover_photo_url}</div>
+                <img src={post.cover_photo_url} alt={post.title}/>
                 <div>{post.title}</div>
                 <div>{post.likes}</div>
                 <ReactMarkdown source={post.content}/>

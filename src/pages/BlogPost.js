@@ -16,7 +16,7 @@ function BlogPost (props) {
             <Nav />
             <Container>
                 <h1>{post.title}</h1>
-                <div>{post.cover_photo_url}</div>
+                <img src={post.cover_photo_url} alt={post.title}/>
                 <div>{post.views}</div>
                 <div>{post.likes}</div>
                 <ReactMarkdown className={styles.content} source={post.content} renderers={{code: CodeBlock}}/>
