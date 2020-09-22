@@ -29,6 +29,9 @@ a:link, a:visited {
     font-size: 10px;
     text-transform: none;
     text-decoration: none;
+    margin-left: 10%;
+    width: 80%;
+    height: 67px;
 }
 
 hr {
@@ -44,9 +47,21 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     margin-top: -5px;
+    font-size: 14px;
 }
 
 .comments {
     text-transform: none;
     font-size: 14px;
+}
+
+.eye {
+    margin-top:3px;
+    padding-right: 3px;
+}
+
+.heart {
+    color: #F40076;
+    margin-top: 1px;
+    padding-left: 1px;
 }
