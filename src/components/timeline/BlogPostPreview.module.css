@@ -11,6 +11,12 @@ a:link, a:visited {
     cursor: pointer;
 }
 
+.titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .title{
     padding: 3px;
     text-decoration: none;
@@ -37,4 +43,10 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: -5px;
+}
+
+.comments {
+    text-transform: none;
+    font-size: 14px;
 }
