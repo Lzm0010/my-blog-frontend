@@ -19,7 +19,7 @@ function PostForm ({post}) {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-            "body": JSON.stringify({title, cover_photo_url:coverPhotoUrl, content, user_id: 1})
+            "body": JSON.stringify({title, cover_photo_url:coverPhotoUrl, content, user_id: 1, views: 0, likes: 0})
         }
         const postData = await fetch(addPostUrl, postObj);
         const post = await postData.json();
