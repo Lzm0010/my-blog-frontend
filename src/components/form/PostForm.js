@@ -26,6 +26,10 @@ function PostForm ({post}) {
         return post;
     }
 
+    const editPost = async () => {
+        
+    }
+
     const handleTitle = e => {
         const newTitle = e.target.value;
         setTitle(newTitle)
@@ -70,6 +74,8 @@ function PostForm ({post}) {
                 <button onClick={handleCoverPhoto}>Upload</button>
 
                 <Editor content={content} setContent={setContent} />
+
+                {/* make this edit button if post in props is passed */}
                 <button className={styles.btn} type="submit">
                     Publish
                 </button>
