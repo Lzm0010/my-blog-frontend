@@ -8,6 +8,7 @@ function PostForm ({post}) {
     const [title, setTitle] = useState(post ? post.title : "");
     const [coverPhotoUrl, setCoverPhotoUrl] = useState(post ? post.coverPhotoUrl : "");
     const [content, setContent] = useState(post ? post.content : "");
+    const [editMode] = useState(post ? true : false)
     const baseUrl = `http://localhost:3000`;
 
     const addPost = async () => {
@@ -26,8 +27,20 @@ function PostForm ({post}) {
         return post;
     }
 
-    const editPost = async () => {
-        
+    const editPost = async (aPost) => {
+        const editPostUrl = `${baseUrl}/posts/${aPost.id}`
+        const patchObj = {
+            "method": "PATCH",
+            "headers": {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            "body": JSON.stringify({title, cover_photo_url:coverPhotoUrl, content, user_id: 1})
+        }
+        const postData = await fetch(editPostUrl, patchObj);
+        const post = await postData.json();
+
+        return post;
     }
 
     const handleTitle = e => {
@@ -53,6 +66,12 @@ function PostForm ({post}) {
             .catch(err => console.log(err));
     }
 
+    const handleEdit = async e => {
+        e.preventDefault();
+        const editedPost = await editPost(post);
+        navigate(`/post/${editedPost.id}`, {state:editedPost})
+    }
+
     const handleSubmit = async e => {
         e.preventDefault();
         const newPost = await addPost();
@@ -75,10 +94,15 @@ function PostForm ({post}) {
 
                 <Editor content={content} setContent={setContent} />
 
-                {/* make this edit button if post in props is passed */}
+                {editMode ? 
+                <button className={styles.btn} onClick={handleEdit}>
+                    Save
+                </button>
+                :(
                 <button className={styles.btn} type="submit">
                     Publish
                 </button>
+                )}
             </form>
         </div>
     )
