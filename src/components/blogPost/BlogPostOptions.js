@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from '@reach/router';
+import styles from './BlogPostOptions.module.css';
 
 function BlogPostOptions ({post, posts}) {
     const prevPostId = post.id - 1;
@@ -8,17 +9,17 @@ function BlogPostOptions ({post, posts}) {
     const nextPost = posts.find(post => post.id === nextPostId);
 
     return(
-        <div>
+        <div className={styles.btnContainer}>
             {/* Delete Button and Edit Hide */}
             {/* <Link to={`/editpost/${post.id}`} state={post}>
                 Edit Post
             </Link> */}
             {prevPost !== undefined ?
-                <Link to={`/post/${prevPostId}`} state={{post:prevPost, posts}}>Prev</Link> :
+                <Link className={styles.btn} to={`/post/${prevPostId}`} state={{post:prevPost, posts}}>&laquo; Previous</Link> :
                 null
             }
             {nextPost !== undefined ?
-                <Link to={`/post/${nextPostId}`} state={{post:nextPost, posts}}>Next</Link> :
+                <Link className={styles.btn} to={`/post/${nextPostId}`} state={{post:nextPost, posts}}>Next &raquo;</Link> :
                 null
             }
             

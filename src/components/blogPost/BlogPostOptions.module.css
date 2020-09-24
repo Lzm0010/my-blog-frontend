@@ -1,0 +1,20 @@
+.btnContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    border-radius: 4px;
+    width: 100px;
+    padding: 10px;
+    background-color: #2B4162;
+    text-decoration: none;
+}
+
+.btn a:link, .btn a:visited {
+    color: #EDEEC0;
+}

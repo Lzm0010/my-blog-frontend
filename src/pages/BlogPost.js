@@ -66,7 +66,6 @@ function BlogPost (props) {
                     <hr/>
                     <div className={styles.footContainer}>
                         <div><VisibilityIcon className={styles.eye} style={{fontSize: 12}}/> {post.views}</div>
-                        {console.log(post)}
                         <div><ChatBubbleOutlineIcon style={{fontSize:13}}/> {post.comments.length}</div>
                         <div onClick={handleFave}>{likes} <FavoriteIcon className={styles.heart} style={{fontSize:13}}/></div>
                     </div>
