@@ -21,7 +21,7 @@ a:hover {
 .topleftcorner {
     border-color: transparent transparent transparent #A7A284;
     border-style: solid;
-    border-width: 0px 0px 200px 200px;
+    border-width: 0px 0px 190px 190px;
     height: 0px;
     width: 0px;
     position: absolute;
@@ -31,7 +31,7 @@ a:hover {
 .toprightcorner {
     border-color: transparent #A7A284 transparent transparent;
     border-style: solid;
-    border-width: 0px 200px 200px 200px;
+    border-width: 0px 190px 190px 0px;
     height: 0px;
     width: 0px;
     position: absolute;
@@ -42,7 +42,7 @@ a:hover {
 .bottomleftcorner {
     border-color: transparent transparent transparent #A7A284;
     border-style: solid;
-    border-width: 200px 200px 0px 200px;
+    border-width: 190px 0px 0px 190px;
     height: 0px;
     width: 0px;
     position: absolute;
@@ -54,7 +54,7 @@ a:hover {
 .bottomrightcorner {
     border-color: transparent #A7A284 transparent transparent;
     border-style: solid;
-    border-width: 200px 200px 0px 200px;
+    border-width: 190px 190px 0px 0px;
     height: 0px;
     width: 0px;
     position: absolute;
@@ -69,7 +69,7 @@ a:hover {
     left: 50px;
     transform: rotate(-45deg);
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .about {
@@ -78,7 +78,7 @@ a:hover {
     right: 50px;
     transform: rotate(45deg);
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .contact {
@@ -87,7 +87,7 @@ a:hover {
     right: 50px;
     transform: rotate(-45deg);
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .projects {
@@ -96,7 +96,91 @@ a:hover {
     left: 50px;
     transform: rotate(45deg);
     z-index: 1;
-    font-size: 1.3em;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 1086px){
+    .topleftcorner {
+        border-width: 0px 0px 150px 150px;
+    }
+    
+    .toprightcorner {
+        border-width: 0px 150px 150px 0px;
+    }
+    
+    .bottomleftcorner {
+        border-width: 150px 0px 0px 150px;
+    }
+    
+    .bottomrightcorner {
+        border-width: 150px 150px 0px 0px;
+    }
+    
+    .home {
+        top: 30px;
+        left: 30px;
+        font-size: 1.2em;
+    }
+    
+    .about {
+        top: 30px;
+        right: 30px;
+        font-size: 1.2em;
+    }
+    
+    .contact {
+        bottom: 30px;
+        right: 30px;
+        font-size: 1.2em;
+    }
+    
+    .projects {
+        bottom: 30px;
+        left: 30px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .topleftcorner {
+        border-width: 0px 0px 105px 105px;
+    }
+    
+    .toprightcorner {
+        border-width: 0px 105px 105px 0px;
+    }
+    
+    .bottomleftcorner {
+        border-width: 105px 0px 0px 105px;
+    }
+    
+    .bottomrightcorner {
+        border-width: 105px 105px 0px 0px;
+    }
+    
+    .home {
+        top: 20px;
+        left: 20px;
+        font-size: 1em;
+    }
+    
+    .about {
+        top: 20px;
+        right: 20px;
+        font-size: 1em;
+    }
+    
+    .contact {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1em;
+    }
+    
+    .projects {
+        bottom: 20px;
+        left: 20px;
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 580px){
