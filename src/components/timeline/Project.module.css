@@ -14,7 +14,8 @@
 .title {
     font-size: 1em;
     font-weight: 800;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
 }
 
 .image {
@@ -30,28 +31,33 @@
 .summary {
     height: 50px;
     font-size: .89em;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
 }
 
 .btn {
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 5px;
     padding: 5px;
-    background-color: #2B4162;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #2B4162; */
+    background-color: #EF6F6C;
+    border: 1px solid #EF6F6C;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 6px 12px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .btn:hover {
-    background-color: #433E0E;
+    /* background-color: #433E0E; */
+    background-color: #426A5A;
+    border: 1px solid #426A5A;
 }
 
 .btn a {
     text-decoration: none;
-    color: #EDEEC0;
+    color: #F5F5F5;
 }
 
 .btn a:hover {
-    color: #EDEEC0;
+    color: #F5F5F5;
 }
 
 .factList {
@@ -73,7 +79,8 @@
 
 .factLi:hover {
     font-size: 20px;
-    background: #EDEEc0;
+    /* background: #EDEEc0; */
+    background: #F2c57C;
 }
 
 
@@ -94,7 +101,7 @@
         margin: 3px;
         padding: 3px;
     }
-    .points {
+    .factList {
         top: -296px;
         font-size: .75em;
     }
@@ -117,7 +124,7 @@
         margin: 2px;
         padding: 2px;
     }
-    .points {
+    .factList {
         top: -249px;
         font-size: .60em;
     }
@@ -140,7 +147,7 @@
         padding: 3px;
         margin: 3px;
     }
-    .points {
+    .factList {
         font-size: .75em;
         top: -313px;
     }

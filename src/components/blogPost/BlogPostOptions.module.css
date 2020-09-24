@@ -1,8 +1,8 @@
 .btnContainer {
     width: 100%;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -11,10 +11,16 @@
     border-radius: 4px;
     width: 100px;
     padding: 10px;
-    background-color: #2B4162;
+    /* background-color: #2B4162; */
+    background-color: #Ef6F6C;
     text-decoration: none;
 }
 
-.btn a:link, .btn a:visited {
-    color: #EDEEC0;
+a:link, a:visited {
+    /* color: #EDEEC0; */
+    color: #F2C57C;
+}
+
+.btn a:hover {
+    color: #F2C57C;
 }

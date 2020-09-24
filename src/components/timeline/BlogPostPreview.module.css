@@ -7,7 +7,8 @@
 
 .blogLink:link, .blogLink:visited {
     text-decoration: none;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
     cursor: pointer;
 }
 
@@ -58,7 +59,7 @@ hr {
 }
 
 .eye {
-    margin-top:3px;
+    margin-top:1px;
     padding-right: 3px;
 }
 

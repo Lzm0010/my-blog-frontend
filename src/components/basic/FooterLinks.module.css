@@ -7,10 +7,12 @@
 }
 
 .faIcon {
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
     margin-top: 14px;
 }
 
 .faIcon:hover {
-    color: #EDEEC0;
+    /* color: #EDEEC0; */
+    color: #F2C57C;
 }

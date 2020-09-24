@@ -7,7 +7,6 @@ import Contact from './pages/Contact'
 import BlogPost from './pages/BlogPost'
 import AddPost from './pages/AddPost'
 import EditPost from './pages/EditPost'
-import './App.css';
 
 const NotFound = () => (
   <div>Sorry, nothing here.</div>

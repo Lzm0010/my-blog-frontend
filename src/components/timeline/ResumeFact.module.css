@@ -13,7 +13,8 @@
 .title{
     font-size: 1em;
     font-weight: 800;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
     padding: 8px;
     width: 100%;
 }
@@ -38,7 +39,7 @@
 }
 
 .position{
-    background-color: #bbb;
+    background-color: #EF6F6C;
     border-radius: 12px;
     width:40%;
     padding: 4px;
@@ -53,12 +54,14 @@
 
 .details {
     padding: 10px;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color: #426A5A;
 }
 
 .details:hover {
     font-size:20px;
-    background:#EDEEC0;
+    /* background:#EDEEC0; */
+    background:#F2C57C;
 }
 
 .resumeList {
@@ -80,7 +83,8 @@
 
 .resumeLi:hover {
     font-size: 20px;
-    background: #EDEEc0;
+    /* background: #EDEEc0; */
+    background: #F2C57C;
 }
 
 @media screen and (max-width: 1086px) {

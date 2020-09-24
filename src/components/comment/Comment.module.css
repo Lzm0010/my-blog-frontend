@@ -1,7 +1,8 @@
 .comment {
     display: flex;
     flex-direction: column;
-    border: 1px solid #2B4162;
+    /* border: 1px solid #2B4162; */
+    border: 1px solid #EF6F6C;
     border-radius: 8px;
     margin-top: 20px;
     padding: 15px;
@@ -16,12 +17,14 @@
 }
 
 .author {
-    color: #2B4162;
+    /* color: #2B4162; */
+    color: #EF6F6C;
 
 }
 
 .date {
-    color: #A7A284; 
+    /* color: #A7A284;  */
+    color: #DDAE7E; 
 }
 
 .content {

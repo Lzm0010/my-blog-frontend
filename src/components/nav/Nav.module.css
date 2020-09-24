@@ -1,5 +1,4 @@
 .nav {
-    /* position: absolute; */
     height: 100vh;
     width: 100vw;
 }
@@ -8,18 +7,21 @@
     display: none;
 }
 
-a:link, a:visited {
+.nav a:link, .nav a:visited {
     text-transform: uppercase;
     font-family: "Gingham";
-    color: #EDEEC0;
+    /* color: #EDEEC0; */
+    color: #426A5A;
 }
 
-a:hover {
-    color: #433E0E;
+.nav a:hover {
+    /* color: #433E0E; */
+    color: #F2C57C;
 }
 
 .topleftcorner {
-    border-color: transparent transparent transparent #A7A284;
+    /* border-color: transparent transparent transparent #A7A284; */
+    border-color: transparent transparent transparent #DDAE7E;
     border-style: solid;
     border-width: 0px 0px 190px 190px;
     height: 0px;
@@ -29,7 +31,8 @@ a:hover {
 }
 
 .toprightcorner {
-    border-color: transparent #A7A284 transparent transparent;
+    /* border-color: transparent #A7A284 transparent transparent; */
+    border-color: transparent #DDAE7E transparent transparent;
     border-style: solid;
     border-width: 0px 190px 190px 0px;
     height: 0px;
@@ -40,7 +43,8 @@ a:hover {
 }
 
 .bottomleftcorner {
-    border-color: transparent transparent transparent #A7A284;
+    /* border-color: transparent transparent transparent #A7A284; */
+    border-color: transparent transparent transparent #DDAE7E;
     border-style: solid;
     border-width: 190px 0px 0px 190px;
     height: 0px;
@@ -52,7 +56,8 @@ a:hover {
 }
 
 .bottomrightcorner {
-    border-color: transparent #A7A284 transparent transparent;
+    /* border-color: transparent #A7A284 transparent transparent; */
+    border-color: transparent #DDAE7E transparent transparent;
     border-style: solid;
     border-width: 190px 190px 0px 0px;
     height: 0px;
@@ -193,7 +198,8 @@ a:hover {
         display: block;
         width: 100vw;
         height: 10%;
-        background-color: #A7A284;
+        /* background-color: #A7A284; */
+        background-color: #DDAE7E;
         z-index: 5;
     }
     
@@ -202,7 +208,8 @@ a:hover {
         text-align: center;
         margin: 0 auto;
         font-size: 60px;
-        color: #EDEEC0;
+        /* color: #EDEEC0; */
+        color: #F2C57C;
     }
     
     .closed {
@@ -220,7 +227,8 @@ a:hover {
         margin-top: -1px;
         width: 100vw;
         height: 165px;
-        background-color: #433E0E;
+        /* background-color: #433E0E; */
+        background-color: #426A5A;
         -webkit-transition:height, 0.5s linear;
         -moz-transition: height, 0.5s linear;
         -ms-transition: height, 0.5s linear;
@@ -236,7 +244,11 @@ a:hover {
 
     nav ul li a {
         text-decoration: none;
-        color: #EDEEC0;
+        color: #F2C57C;
+    }
+
+    .nav a:link, .nav a:visited {
+        color: #F2C57C;
     }
 
     .mobileLink {

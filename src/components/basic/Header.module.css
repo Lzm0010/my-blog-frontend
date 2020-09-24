@@ -10,7 +10,8 @@
 .title {
     font-family: 'Gingham';
     font-size: 110px;
-    color: #433E0E;
+    /* color: #433E0E; */
+    color:#426A5A;
     text-align: center;
     display: inline-block;
     width: 40%;
