@@ -75,7 +75,7 @@ function PostForm ({post}) {
     const handleSubmit = async e => {
         e.preventDefault();
         const newPost = await addPost();
-        navigate(`/post/${newPost.id}`, {state:newPost})
+        navigate(`/post/${newPost.id}`, {state:{post:newPost}})
     }
 
     return (
