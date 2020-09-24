@@ -27,7 +27,7 @@ function BlogPostPreview ({post}) {
         }
         fetch(editPostUrl, patchObj)
             .then(res => res.json())
-            .then(updatedPost => console.log(updatedPost));
+            .then(res => console.log("Like added."));
     }
 
     const handleFave = () => {
@@ -38,7 +38,7 @@ function BlogPostPreview ({post}) {
 
     return(
         <div>
-            <Link to={`post/${post.id}`} state={post}>
+            <Link className={styles.blogLink} to={`post/${post.id}`} state={post}>
                 <img className={styles.image} src={post.cover_photo_url} alt={post.title}/>
                 <div className={styles.titleContainer}>
                     <div className={styles.title}>{post.title}</div>
@@ -49,7 +49,7 @@ function BlogPostPreview ({post}) {
                 <hr />
                 <div className={styles.footContainer}>
                     <div><VisibilityIcon className={styles.eye} style={{fontSize: 12}}/> {post.views}</div>
-                    <Link to={`post/${post.id}`} state={post}>
+                    <Link className={styles.blogLink} to={`post/${post.id}`} state={post}>
                         {post.comments.length !== 0 ? ( 
                             <span>
                                 <ChatBubbleOutlineIcon style={{fontSize:13}}/> post.comments.length

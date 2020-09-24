@@ -5,11 +5,12 @@
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19); */
 }
 
-a:link, a:visited {
+.blogLink:link, .blogLink:visited {
     text-decoration: none;
     color: #433E0E;
     cursor: pointer;
 }
+
 
 .titleContainer{
     display: flex;
@@ -53,6 +54,7 @@ hr {
 .comments {
     text-transform: none;
     font-size: 14px;
+    margin-top: 1px;
 }
 
 .eye {
@@ -64,6 +66,7 @@ hr {
     color: #F40076;
     margin-top: 1px;
     padding-left: 1px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1086px) {
