@@ -13,9 +13,14 @@ function BlogPostOptions ({post, posts}) {
             {/* <Link to={`/editpost/${post.id}`} state={post}>
                 Edit Post
             </Link> */}
-            
-            <Link to={`/post/${prevPostId}`} state={{post:prevPost, posts}}>Prev</Link>
-            <Link to={`/post/${nextPostId}`} state={{post:nextPost, posts}}>Next</Link>
+            {prevPost !== undefined ?
+                <Link to={`/post/${prevPostId}`} state={{post:prevPost, posts}}>Prev</Link> :
+                null
+            }
+            {nextPost !== undefined ?
+                <Link to={`/post/${nextPostId}`} state={{post:nextPost, posts}}>Next</Link> :
+                null
+            }
             
         </div>
     )
