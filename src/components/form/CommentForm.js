@@ -14,7 +14,7 @@ function CommentForm ({post, setComments}) {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-            "body": JSON.stringify({author, content, post_id: post.id})
+            "body": JSON.stringify({author, content, post_id: post.id, user_id:2})
         }
         const commentData = await fetch(addCommentUrl, postObj);
         const comment = await commentData.json();

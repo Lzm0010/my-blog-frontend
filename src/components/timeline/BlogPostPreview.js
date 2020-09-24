@@ -52,7 +52,7 @@ function BlogPostPreview ({post, posts}) {
                     <Link className={styles.blogLink} to={`post/${post.id}`} state={{post, posts}}>
                         {post.comments.length !== 0 ? ( 
                             <span>
-                                <ChatBubbleOutlineIcon style={{fontSize:13}}/> post.comments.length
+                                <ChatBubbleOutlineIcon style={{fontSize:13}}/> {post.comments.length}
                             </span> ) : <span className={styles.comments}>Write a comment</span>}
                     </Link>
                         <div onClick={handleFave}>{likes} <FavoriteIcon className={styles.heart} style={{fontSize:13}}/></div>

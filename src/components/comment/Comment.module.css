@@ -1,0 +1,29 @@
+.comment {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2B4162;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
+.author {
+    color: #2B4162;
+
+}
+
+.date {
+    color: #A7A284; 
+}
+
+.content {
+    padding: 20px;
+}

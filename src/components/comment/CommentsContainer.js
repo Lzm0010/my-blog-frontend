@@ -11,11 +11,12 @@ function CommentContainer ({post, comments}) {
 
     return(
         <Fragment>
+            <div>Post a Comment</div>
+            <CommentForm post={post} setComments={setBlogComments}/>
             <div>Comments</div>
             { 
                 displayComments()
             }
-            <CommentForm post={post} setComments={setBlogComments}/>
         </Fragment>
     )
 }
