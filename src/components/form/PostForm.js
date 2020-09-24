@@ -59,7 +59,6 @@ function PostForm ({post}) {
             body: formData,
         };
 
-        // replace cloudname with your Cloudinary cloud_name
         return fetch(`https://api.Cloudinary.com/v1_1/${process.env.REACT_APP_CLOUD_NAME}/image/upload`, options)
             .then(res => res.json())
             .then(res => setCoverPhotoUrl(res.secure_url))
