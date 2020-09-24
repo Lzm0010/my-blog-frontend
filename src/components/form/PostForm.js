@@ -9,7 +9,8 @@ function PostForm ({post}) {
     const [coverPhotoUrl, setCoverPhotoUrl] = useState(post ? post.coverPhotoUrl : "");
     const [content, setContent] = useState(post ? post.content : "");
     const [editMode] = useState(post ? true : false)
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`;
 
     const addPost = async () => {
         const addPostUrl = `${baseUrl}/posts`

@@ -4,7 +4,8 @@ import BlogPostPreview from './BlogPostPreview';
 import useFetch from '../../hooks/useFetch';
 
 function BlogPostPreviews () {
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`;
     const postsUrl = `${baseUrl}/posts`;
 
     const [response, loading, hasError] = useFetch(postsUrl);

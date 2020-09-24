@@ -13,12 +13,14 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 function BlogPost (props) {
     const post = props.location.state.post;
     const posts = props.location.state.posts;
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`
     const [likes, setLikes] = useState(post.likes);
 
     // increase views when someone visits page no caps
     useEffect(() => {
-        const baseUrl = `http://localhost:3000`;
+        // const baseUrl = `http://localhost:3000`;
+        const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`;
         const editPostUrl = `${baseUrl}/posts/${post.id}`;
         const patchObj = {
             "method": "PATCH",

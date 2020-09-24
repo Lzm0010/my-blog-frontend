@@ -4,7 +4,8 @@ import styles from './CommentForm.module.css';
 function CommentForm ({post, setComments}) {
     const [author, setAuthor] = useState("");
     const [content, setContent] = useState("");
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`;
 
     const addComment = async () => {
         const addCommentUrl = `${baseUrl}/comments`

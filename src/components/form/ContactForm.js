@@ -5,7 +5,8 @@ function ContactForm () {
     const [email, setEmail] = useState("");
     const [content, setContent] = useState("");
     const [message, setMessage] = useState("");
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`;
 
     const sendEmail = async () => {
         const contactUrl = `${baseUrl}/contacts`;

@@ -8,7 +8,8 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 function BlogPostPreview ({post, posts}) {
-    const baseUrl = `http://localhost:3000`;
+    // const baseUrl = `http://localhost:3000`;
+    const baseUrl = `https://glacial-hamlet-43424.herokuapp.com/`
     const [likes, setLikes] = useState(post.likes);
 
     const truncate = (string) => {
