@@ -1,10 +1,21 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import Comment from './Comment';
+import CommentForm from '../form/CommentForm';
 
-function CommentContainer () {
+function CommentContainer ({post, comments}) {
+    const [blogComments, setBlogComments] = useState(comments);
+    
+    const displayComments = () => {
+        return blogComments.map(comment => <Comment key={`c-${comment.id}`} comment={comment}/>)
+    }
+
     return(
         <Fragment>
-            <Comment />
+            <div>Comments</div>
+            { 
+                displayComments()
+            }
+            <CommentForm post={post} setComments={setBlogComments}/>
         </Fragment>
     )
 }

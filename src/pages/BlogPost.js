@@ -70,7 +70,7 @@ function BlogPost (props) {
                         <div onClick={handleFave}>{likes} <FavoriteIcon className={styles.heart} style={{fontSize:13}}/></div>
                     </div>
                     <BlogPostOptions post={post} posts={posts}/>
-                    <CommentsContainer />
+                    <CommentsContainer post={post} comments={post.comments}/>
                 </div>
             </Container>
         </Fragment>
