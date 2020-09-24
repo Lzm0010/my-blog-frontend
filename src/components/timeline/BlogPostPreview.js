@@ -7,7 +7,7 @@ import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 
-function BlogPostPreview ({post}) {
+function BlogPostPreview ({post, posts}) {
     const baseUrl = `http://localhost:3000`;
     const [likes, setLikes] = useState(post.likes);
 
@@ -38,7 +38,7 @@ function BlogPostPreview ({post}) {
 
     return(
         <div>
-            <Link className={styles.blogLink} to={`post/${post.id}`} state={post}>
+            <Link className={styles.blogLink} to={`post/${post.id}`} state={{post, posts}}>
                 <img className={styles.image} src={post.cover_photo_url} alt={post.title}/>
                 <div className={styles.titleContainer}>
                     <div className={styles.title}>{post.title}</div>
@@ -49,7 +49,7 @@ function BlogPostPreview ({post}) {
                 <hr />
                 <div className={styles.footContainer}>
                     <div><VisibilityIcon className={styles.eye} style={{fontSize: 12}}/> {post.views}</div>
-                    <Link className={styles.blogLink} to={`post/${post.id}`} state={post}>
+                    <Link className={styles.blogLink} to={`post/${post.id}`} state={{post, posts}}>
                         {post.comments.length !== 0 ? ( 
                             <span>
                                 <ChatBubbleOutlineIcon style={{fontSize:13}}/> post.comments.length

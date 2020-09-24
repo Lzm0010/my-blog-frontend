@@ -10,7 +10,7 @@ function BlogPostPreviews () {
     const [response, loading, hasError] = useFetch(postsUrl);
 
     const displayPosts = () => {
-        return response.map(post => <TimeItem key={post.id} date={post.created_at}><BlogPostPreview post={post} /></TimeItem>)
+        return response.map(post => <TimeItem key={post.id} date={post.created_at}><BlogPostPreview post={post} posts={response} /></TimeItem>)
     }
 
     return(

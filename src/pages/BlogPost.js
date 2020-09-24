@@ -11,7 +11,8 @@ import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
 function BlogPost (props) {
-    const post = props.location.state;
+    const post = props.location.state.post;
+    const posts = props.location.state.posts;
     const baseUrl = `http://localhost:3000`;
     const [likes, setLikes] = useState(post.likes);
 
@@ -65,10 +66,11 @@ function BlogPost (props) {
                     <hr/>
                     <div className={styles.footContainer}>
                         <div><VisibilityIcon className={styles.eye} style={{fontSize: 12}}/> {post.views}</div>
+                        {console.log(post)}
                         <div><ChatBubbleOutlineIcon style={{fontSize:13}}/> {post.comments.length}</div>
                         <div onClick={handleFave}>{likes} <FavoriteIcon className={styles.heart} style={{fontSize:13}}/></div>
                     </div>
-                    <BlogPostOptions post={post}/>
+                    <BlogPostOptions post={post} posts={posts}/>
                     <CommentsContainer />
                 </div>
             </Container>
